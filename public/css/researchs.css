@@ -1,0 +1,62 @@
+.title-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.title{
+    color: white;
+}
+.research-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.research-card{
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 10px;
+}
+.research-title-div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.research-title{
+    font-size: 20px;
+    color: darkblue;
+}
+.research-img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.research-img{
+    width: 200px;
+    height: 150px;
+}
+.link-div{
+    display: flex;
+    justify-content: center;
+}
+.link{
+    border: 2px solid darkblue;
+    color: darkblue;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 0.2s ease-in;
+    background-color: white;
+}
+.link:hover{
+    background-color: darkblue;
+    color: white;
+    font-weight: 700;
+}

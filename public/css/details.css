@@ -1,0 +1,45 @@
+.title-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.title{
+    color: white;
+}
+.research-card-div{
+    display: flex;
+    justify-content: center;
+}
+.research-card{
+    background-color: white;
+    width: 700px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.research-title-div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.research-title{
+    color: darkblue;
+    margin-bottom: 20px;
+}
+.research-image-div{
+    display: flex;
+    justify-content: center;
+}
+.research-image{
+    width: 600px;
+    height: 450px;
+}
+.research-description-div{
+    margin-left: 25px;
+}
+.research-adress-div{
+    margin-left: 25px;
+}

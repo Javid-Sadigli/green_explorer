@@ -1,0 +1,27 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/add-research.css">
+</head>
+<body>
+    <%- include('./includes/navbar.ejs')%>
+        
+    <section class="add-research-section">
+        <div class="add-research-card">
+            <div class="title-div">
+                <h1 class="title">
+                    Add research
+                </h1>
+            </div>
+            <div class="form-div">
+                <form action="/add-research" method="post" class="form" enctype="multipart/form-data">
+                    <input type="text" name="title" value="Title" class="input">
+                    <textarea name="description" class="desc-input">Description</textarea>
+                    <input type="file" name="file" class="input-file">
+                    <input type="text" name="adress" value="Adress" class="input">
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
