@@ -6,7 +6,7 @@ let _db;
 
 // Connect the database
 const mongoConnect = (CALLBACK_FUNCTION) => {
-    MongoClient.connect('mongodb+srv://heydaraliyevhackathon:heydaraliyev123@mycluster.0n0iq50.mongodb.net/greenexplorer?retryWrites=true&w=majority').then((client) => {
+    MongoClient.connect('YOUR_MONGODB_DATABASE_PATH').then((client) => {
         _db = client.db();
         CALLBACK_FUNCTION(client);
     }).catch((err) => {
