@@ -60,7 +60,9 @@ app.use(function(req, res, next)
 app.use(ConsoleController.LOG_Request);
 
 // Give the app access to the routes 
-app.use('/', UserRouter);
+app.use('/', UserRouter
+    // #swagger.tags = ['Users']
+);
 
 // Give the app access to log and send error
 app.use(ConsoleController.LOG_Error);
