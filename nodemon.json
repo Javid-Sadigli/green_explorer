@@ -1,0 +1,5 @@
+{
+    "ext": "js,json",
+    "exec": "node swagger.js && node app.js",
+    "ignore": ["node_modules", "swagger-output.json"]  
+  }

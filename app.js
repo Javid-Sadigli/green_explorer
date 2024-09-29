@@ -6,6 +6,8 @@ const port = 3000;
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const swaggerUi = require("swagger-ui-express");
+const swaggerDoc = require("./swagger-output.json");
 
 // Routers
 const UserRouter = require('./routes/user');
@@ -24,6 +26,7 @@ const mongo_db = require('./data/database');
 const app = express();
 
 // We give the app some useful features
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(
     path.dirname(require.main.filename), 
